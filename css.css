@@ -1,0 +1,357 @@
+/* MENU */
+*{
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.logo :hover{   
+    text-decoration:none;   
+}
+
+.menu{
+    height: 80px; 
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+}
+
+.menu nav ul li a{
+    color:rgb(70, 70, 70) ;
+    transition: color 300ms;
+}
+
+.menu nav ul li a:hover{
+    color: rgb(0, 19, 192);
+    transition: color 300ms; 
+}
+.menu nav ul li a i{
+    display: none;
+}
+
+.menu .text-select{
+    color: rgb(29, 112, 180);
+}
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 25px;
+    top: 16px;
+    padding: 15px;
+    font-size: 20px;
+    background: #fafafa;
+    border-radius: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icon-menu{
+    background: #f2f2f2;
+    opacity: 0.8;
+
+}
+/* FIN MENU */
+
+
+
+
+
+
+/* MENU RESPONSIVE */
+
+@media screen and (max-width: 1220px){
+    .header-content{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 800px){
+    .menu{
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: #fafafa;
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 10px 0 20px -25px black;
+        transition: all 300ms cubic-bezier(1,0,0,1);
+
+    }
+
+    .show-lateral{
+        *width: 300px;
+        transform: translateX(0px);
+    }
+    .menu nav ul {
+        flex-direction: column;
+    }
+    .menu nav ul li{
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+       
+    }
+    .menu-select:before{
+        width: 0;
+    }
+    .menu nav ul li a{
+        margin-top: 40px;
+        
+    }
+    .menu nav ul li a i{
+        width: 25px;
+        display: inline-block;
+        margin-right: 10px;
+        color: rgb(29, 112, 180, 0.6);
+    }
+    #icon-menu{
+        display: block;
+    }
+    .move-container-all{
+        transform: translateX(300px); 
+    }
+    .container-all{
+        transition: 300ms;
+    } 
+}
+/*FIN MENU RESPONSIVE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ver mas */
+
+.cuerpoCeleste{
+    background: rgb(0, 217, 255);
+    color: #fff;
+    display: flex;    
+}
+/*  .cuerpoCeleste div {
+    margin: 150px;
+}  */
+
+.publicidadSintomas{
+    background: rgb(0, 0, 0 ,.2);
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 25px;
+    padding: 50px;
+  
+    
+    
+}
+.publicidadSintomas p {
+    padding: 10%;
+}
+
+.publicidadTexto{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 25px;     
+}
+
+/* ver mas */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer - pie de pagina*/
+.container-footer{
+    width: 100%;
+    padding: 10px ;
+    background: white;
+    margin-top: 40px;
+    }
+    .container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+    }
+    .container-footer footer .logo-footer{
+    text-align: center;
+    }
+    .container-footer footer .logo-footer img{
+    width: 100px;
+    }
+    .container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    }
+    .container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #ffffff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #5f5f5f;
+    }
+    footer .redes-footer .fa-facebook-f:hover{
+    background: #41579A;
+    color: #fff;
+    }
+
+    footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+    color: #fff;
+    }
+    .container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 5px;
+    background: rgb(52, 225, 255);
+    display: block;
+    }
+    .container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color:#5f5f5f;
+    font-weight: 500;
+    }
+    /*FIN Footer - pie de pagina*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
